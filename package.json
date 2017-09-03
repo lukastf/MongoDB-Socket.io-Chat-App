@@ -1,0 +1,23 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Simple Chat App built with MongoDB & Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric574/MongoDB-Socket.io-Chat-App.git"
+  },
+  "author": "Eric Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eric574/MongoDB-Socket.io-Chat-App/issues"
+  },
+  "homepage": "https://github.com/eric574/MongoDB-Socket.io-Chat-App#readme",
+  "dependencies": {
+    "mongodb": "^2.2.31",
+    "socket.io": "^2.0.3"
+  }
+}
