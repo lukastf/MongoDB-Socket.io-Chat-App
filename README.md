@@ -17,4 +17,4 @@ npm start
 ```
 
 ## Run App
-Open index.html
+Open index.html in your browser.
