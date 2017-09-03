@@ -4,6 +4,8 @@ A simple Chat App built with MongoDB &amp; Socket.io.
 ### Version
 1.0.0
 
+## To Run:
+
 ## Install Dependencies
 ```bash
 npm install 
