@@ -8,12 +8,16 @@ A simple Chat App built with MongoDB &amp; Socket.io.
 
 ## Install Dependencies
 ```bash
-npm install 
+npm install mongodb socket.io
 ```
 
 ## Run Server
 ```bash
 npm start
+```
+or 
+```bash
+node server.js
 ```
 
 ## Run App
