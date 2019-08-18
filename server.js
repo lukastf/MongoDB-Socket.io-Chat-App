@@ -2,8 +2,12 @@ const mongo = require('mongodb').MongoClient;
 const client = require('socket.io').listen(4000).sockets;
 
 // Connects to Mongo
-var url = 'mongodb://localhost:27017/chatapp';
-mongo.connect(url, function(err, db) {
+//simple connection
+let url = 'mongodb://localhost:27017/chatapp';
+//password connection
+let urlPass = 'mongodb://user:pass@localhost/admin';
+
+mongo.connect(url, { useNewUrlParser: true}, function(err, db) {
 	if (err) {
 		throw err;
 	}
@@ -13,7 +17,12 @@ mongo.connect(url, function(err, db) {
 
 	// Connects to Socket.io
 	client.on('connection', function(socket) {
-		let chat = db.collection('chats');
+
+		//select db
+        let ChatDb = db.db("ChatDb");
+
+		//select collection
+		let chat = ChatDb.collection('chats');
 
 		// Creates function to send/emit status of messages
 		sendStatus = function(s) {
